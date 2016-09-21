@@ -10,7 +10,7 @@ gem 'llt-constants', git: 'git://github.com/latin-language-toolkit/llt-constants
 gem 'llt-db_handler', git: 'git://github.com/latin-language-toolkit/llt-db_handler.git'
 gem 'llt-helpers', git: 'git://github.com/latin-language-toolkit/llt-helpers.git'
 gem 'llt-logger', git: 'git://github.com/latin-language-toolkit/llt-logger.git'
-gem 'llt-review', git: 'git://github.com/latin-language-toolkit/llt-review.git'
+gem 'llt-review', git: 'git://github.com/perseids-project/llt-review.git'
 gem 'llt-segmenter', git: 'git://github.com/latin-language-toolkit/llt-segmenter.git'
 gem 'llt-xml_handler', git: 'git://github.com/latin-language-toolkit/llt-xml_handler.git'
 gem 'llt-tokenizer', git: 'git://github.com/latin-language-toolkit/llt-tokenizer.git'
@@ -27,6 +27,7 @@ platform :jruby do
   gem 'activerecord-jdbcpostgresql-adapter'
   gem 'nokogiri' # needed by llt-review
   gem 'jruby-httpclient'
+  gem 'celluloid'
 end
 
 gem 'array_scanner'
