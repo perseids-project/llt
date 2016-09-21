@@ -27,7 +27,7 @@ platform :jruby do
   gem 'activerecord-jdbcpostgresql-adapter'
   gem 'nokogiri' # needed by llt-review
   gem 'jruby-httpclient'
-  gem 'celluloid'
+  gem 'celluloid', '0.16.0'
 end
 
 gem 'array_scanner'
