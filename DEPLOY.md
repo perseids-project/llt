@@ -46,14 +46,7 @@ warble
 git clone https://github.com/latin-language-toolkit/llt-db_handler
 cd llt-db_handler
 su - postgres
-psql
-
-
-    create user prometheus with password 'admin'
-    alter user prometheus with createdb
-    create database prometheus
-    \q
-    
+psql -W -f db/create.sql
 rake db:prometheus:create -h [hostname]
 rake db:prometheus:seed -h [hostname]
 ```
