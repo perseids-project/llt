@@ -31,3 +31,4 @@ platform :jruby do
 end
 
 gem 'array_scanner'
+gem 'warbler'
