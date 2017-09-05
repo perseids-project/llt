@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in llt-tokenizer.gemspec
 gemspec
 
-gem 'coveralls', require: false
+gem 'coveralls', '0.8.21', require: false
 
 gem 'llt-core', git: 'git://github.com/perseids-project/llt-core.git'
 gem 'llt-constants', git: 'git://github.com/perseids-project/llt-constants.git'
@@ -24,10 +24,12 @@ platform :ruby do
 end
 
 platform :jruby do
+  gem 'activesupport','3.2.22.2'
   gem 'activerecord-jdbcpostgresql-adapter','1.3.19'
   gem 'nokogiri','1.6.7.2' # needed by llt-review
   gem 'jruby-httpclient', '1.1.1'
   gem 'celluloid', '0.16.0'
+  gem 'sinatra','1.4.7'
 end
 
 gem 'array_scanner', '0.0.2'
